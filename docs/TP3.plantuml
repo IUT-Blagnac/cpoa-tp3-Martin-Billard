@@ -119,15 +119,15 @@ title __JAVA's Class Diagram__\n
 
   
 
-  PizzaFromageStyleBrest -up-|> Pizza
-  PizzaFromageStyleStrasboug -up-|> Pizza
-  PizzaGrecque -up-|> Pizza
-  PizzaPoivrons -up-|> Pizza
+  PizzaFromageStyleBrest --|> Pizza
+  PizzaFromageStyleStrasboug --|> Pizza
+  PizzaGrecque --|> Pizza
+  PizzaPoivrons --|> Pizza
   Pizzeria --> "1"PizzaFactory : pizzafactory
-  PizzeriaBrest -up-|> Pizzeria
-  PizzeriaStrasbourg -up-|> Pizzeria
-  PizzaFactoryBrest -up-|> PizzaFactory
-  PizzaFactoryStrasbourg -up-|> PizzaFactory
+  PizzeriaBrest --|> Pizzeria
+  PizzeriaStrasbourg --|> Pizzeria
+  PizzaFactoryBrest --|> PizzaFactory
+  PizzaFactoryStrasbourg --|> PizzaFactory
   PizzeriaFactory ..> Pizzeria
   PizzaTestDrive ..> PizzeriaFactory
   PizzaTestDrive ..> Pizza
