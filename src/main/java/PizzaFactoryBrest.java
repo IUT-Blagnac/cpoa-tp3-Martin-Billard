@@ -1,24 +1,23 @@
-public class SimpleFabriqueDePizzasStrasbourg extends SimpleFabriqueDePizzas {
+public class PizzaFactoryBrest extends PizzaFactory {
 
-    private static SimpleFabriqueDePizzasStrasbourg instance = null;
+    private static PizzaFactoryBrest instance = null;
 
-    private SimpleFabriqueDePizzasStrasbourg() {
+    private PizzaFactoryBrest() {
 
     }
 
-    public synchronized static SimpleFabriqueDePizzasStrasbourg getInstance() {
+    public synchronized static PizzaFactoryBrest getInstance() {
         if (instance == null) {
-            instance = new SimpleFabriqueDePizzasStrasbourg();
+            instance = new PizzaFactoryBrest();
         }
         return instance;
     }
-
     public Pizza creerPizza(String type) {
 
         Pizza pizza;
         switch (type) {
             case "fromage":
-                pizza = new PizzaFromageStyleStrasboug();
+                pizza = new PizzaFromageStyleBrest();
                 break;
             case "grecque":
                 pizza = new PizzaGrecque();
@@ -27,7 +26,6 @@ public class SimpleFabriqueDePizzasStrasbourg extends SimpleFabriqueDePizzas {
                 pizza = new PizzaPoivrons();
                 break;
         }
-
         return pizza;
     }
 }

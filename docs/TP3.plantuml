@@ -2,11 +2,11 @@
 
 title __JAVA's Class Diagram__\n
 
-    class FabriquePizzeria {
-        {static} - instance : FabriquePizzeria
+    class PizzeriaFactory {
+        {static} - instance : PizzeriaFactory
         + creerPizzeria()
         {static} + getInstance()
-        - FabriquePizzeria()
+        - PizzeriaFactory()
     }
   
 
@@ -93,28 +93,28 @@ title __JAVA's Class Diagram__\n
   
 
 
-    abstract class SimpleFabriqueDePizzas {
+    abstract class PizzaFactory {
         + creerPizza()
     }
 
   
 
 
-    class SimpleFabriqueDePizzasBrest {
-        {static} - instance : SimpleFabriqueDePizzasBrest
+    class PizzaFactoryBrest {
+        {static} - instance : PizzaFactoryBrest
         + creerPizza()
         {static} + getInstance()
-        - SimpleFabriqueDePizzasBrest()
+        - PizzaFactoryBrest()
     }
 
   
 
 
-    class SimpleFabriqueDePizzasStrasbourg {
-        {static} - instance : SimpleFabriqueDePizzasStrasbourg
+    class PizzaFactoryStrasbourg {
+        {static} - instance : PizzaFactoryStrasbourg
         + creerPizza()
         {static} + getInstance()
-        - SimpleFabriqueDePizzasStrasbourg()
+        - PizzaFactoryStrasbourg()
     }
 
   
@@ -123,11 +123,11 @@ title __JAVA's Class Diagram__\n
   PizzaFromageStyleStrasboug -up-|> Pizza
   PizzaGrecque -up-|> Pizza
   PizzaPoivrons -up-|> Pizza
-  Pizzeria o-- SimpleFabriqueDePizzas : fabrique
+  Pizzeria o-- PizzaFactory : fabrique
   PizzeriaBrest -up-|> Pizzeria
   PizzeriaStrasbourg -up-|> Pizzeria
-  SimpleFabriqueDePizzasBrest -up-|> SimpleFabriqueDePizzas
-  SimpleFabriqueDePizzasStrasbourg -up-|> SimpleFabriqueDePizzas
+  PizzaFactoryBrest -up-|> PizzaFactory
+  PizzaFactoryStrasbourg -up-|> PizzaFactory
 
 
 right footer

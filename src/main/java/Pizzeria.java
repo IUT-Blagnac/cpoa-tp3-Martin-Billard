@@ -4,8 +4,8 @@
  */
 public abstract class Pizzeria {
 
-    SimpleFabriqueDePizzas fabrique;
-    public Pizzeria(SimpleFabriqueDePizzas f) {
+    PizzaFactory fabrique;
+    public Pizzeria(PizzaFactory f) {
         this.fabrique = f;
     }
 

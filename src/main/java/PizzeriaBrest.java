@@ -1,5 +1,5 @@
 public class PizzeriaBrest extends Pizzeria{
-    public PizzeriaBrest(SimpleFabriqueDePizzas f) {
+    public PizzeriaBrest(PizzaFactory f) {
         super(f);
     }
 

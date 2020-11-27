@@ -1,4 +1,4 @@
-public abstract class SimpleFabriqueDePizzas {
+public abstract class PizzaFactory {
 
     public Pizza creerPizza(String type) {
         Pizza pizza;
