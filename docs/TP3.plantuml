@@ -123,7 +123,7 @@ title __JAVA's Class Diagram__\n
   PizzaFromageStyleStrasboug -up-|> Pizza
   PizzaGrecque -up-|> Pizza
   PizzaPoivrons -up-|> Pizza
-  Pizzeria o-- PizzaFactory : fabrique
+  Pizzeria --> "1"PizzaFactory : pizzafactory
   PizzeriaBrest -up-|> Pizzeria
   PizzeriaStrasbourg -up-|> Pizzeria
   PizzaFactoryBrest -up-|> PizzaFactory
