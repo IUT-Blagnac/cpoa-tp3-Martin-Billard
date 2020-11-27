@@ -128,7 +128,11 @@ title __JAVA's Class Diagram__\n
   PizzeriaStrasbourg -up-|> Pizzeria
   PizzaFactoryBrest -up-|> PizzaFactory
   PizzaFactoryStrasbourg -up-|> PizzaFactory
-
+  PizzeriaFactory ..> Pizzeria
+  PizzaTestDrive ..> PizzeriaFactory
+  PizzaTestDrive ..> Pizza
+  PizzaFactory ..> Pizza
+  Pizzeria ..> Pizza
 
 right footer
 
