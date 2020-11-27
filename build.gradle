@@ -5,6 +5,7 @@
 plugins {
     id 'java'
     id 'maven-publish'
+	id "com.github.roroche.plantuml" version "1.0.2"
 }
 jar {
     manifest {
@@ -35,4 +36,8 @@ publishing {
             from(components.java)
         }
     }
+}
+classDiagram { // (1)
+    packageName = "" // (2)
+    outputFile = project.file('diagrams/class_diagram.plantuml') // (3)
 }
