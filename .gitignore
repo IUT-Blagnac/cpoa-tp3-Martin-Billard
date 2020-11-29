@@ -2,6 +2,7 @@
 .vscode
 .classpath
 .project
+.idea
 target
 .gradle
 build
